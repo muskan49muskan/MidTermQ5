@@ -1,4 +1,3 @@
-
 package days;
 
 import java.util.Scanner;
@@ -20,6 +19,12 @@ public class Days {
             Weekday[] weekdays = Weekday.values();
             Weekday selectedDay = weekdays[dayNumber];
             System.out.println("The day is: " + selectedDay);
+
+            // Print all day names
+            System.out.println("All day names:");
+            for (Weekday day : Weekday.values()) {
+                System.out.println(day);
+            }
         } else {
             System.out.println("Invalid day number. Please enter a number between 0 and 6.");
         }
